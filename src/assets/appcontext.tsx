@@ -6,12 +6,21 @@ interface AppState {
         openAddWindow: boolean;
         setOpenAddWindow: React.Dispatch<React.SetStateAction<boolean>>;
     };
+
+    openIconWindowObject: {
+        openIconWindow: boolean;
+        setOpenIconWindow: React.Dispatch<React.SetStateAction<boolean>>;
+    };
 }
 
 const defaultState: AppState = {
     openAddWindowObject: {
         openAddWindow: false,
         setOpenAddWindow: () => {},
+    },
+    openIconWindowObject: {
+        openIconWindow: true,
+        setOpenIconWindow: () => {},
     },
 };
 
@@ -21,11 +30,13 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
     children,
 }) => {
     const [openAddWindow, setOpenAddWindow] = useState(false);
+    const [openIconWindow, setOpenIconWindow] = useState(true);
 
     return (
         <AppContext.Provider
             value={{
                 openAddWindowObject: { openAddWindow, setOpenAddWindow },
+                openIconWindowObject: { openIconWindow, setOpenIconWindow },
             }}
         >
             {children}

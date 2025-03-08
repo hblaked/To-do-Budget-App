@@ -15,8 +15,8 @@ export default function saving() {
         <span className='font-bold text-2xl'>0$</span>
 
         <span className='flex gap-2'>
-          <button><svg className='fill-neutral-50 w-fit h-fit p-2 bg-yellow-400 rounded-lg cursor-pointer' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-120v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm584-528 56-56-56-56-56 56 56 56Z"/></svg></button>
-          <button><svg className='fill-neutral-600 w-fit h-fit p-2 bg-neutral-300 rounded-lg cursor-pointer' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm80-160h80v-360h-80v360Zm160 0h80v-360h-80v360Z"/></svg></button>
+          <button className='rounded-lg hover:shadow-md transition-all duration-150'><svg className='fill-neutral-50 w-fit h-fit p-2 bg-yellow-400 rounded-lg cursor-pointer' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-120v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm584-528 56-56-56-56-56 56 56 56Z"/></svg></button>
+          <button className='rounded-lg hover:shadow-md transition-all duration-150'><svg className='fill-neutral-600 w-fit h-fit p-2 bg-neutral-300 rounded-lg cursor-pointer' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm80-160h80v-360h-80v360Zm160 0h80v-360h-80v360Z"/></svg></button>
         </span>
       </div>
     </div>

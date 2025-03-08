@@ -24,7 +24,7 @@ function ExpenseHeader() {
     return (
         <div className='flex flex-col gap-3'>
             <div>
-                <button className='flex gap-1 items-center font-bold text-2xl cursor-pointer'>{months[currentDate.getMonth()]} <svg className='fill-neutral-300' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-360 280-560h400L480-360Z"/></svg></button>
+                <button className='flex gap-1 items-center font-bold text-2xl cursor-pointer'>{months[currentDate.getMonth()]} {currentDate.getFullYear()} <svg className='fill-neutral-300' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-360 280-560h400L480-360Z"/></svg></button>
             </div>
 
             <div className='flex justify-between items-center'>
@@ -43,6 +43,10 @@ function ExpenseHeader() {
 function ExpenseList() {
     return (
         <div className='flex flex-col items-center p-1 gap-2.5 overflow-y-auto'>
+            <Expense />
+            <Expense />
+            <Expense />
+            <Expense />
             <Expense />
         </div>
     );
@@ -70,6 +74,10 @@ function SavingHeader() {
 function SavingList() {
     return (
         <div className='flex flex-col items-center p-1 gap-2.5 overflow-y-auto'>
+            <Saving />
+            <Saving />
+            <Saving />
+            <Saving />
             <Saving />
         </div>
     );
