@@ -16,9 +16,11 @@
 }
 
 @theme {
-  --background: #161616;
+  --background: #fafafa;
+  --text: #000;
 }
 
 body {
   background-color: var(--background);
+  color: var(--text);
 }
