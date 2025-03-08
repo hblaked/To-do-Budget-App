@@ -30,7 +30,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
     children,
 }) => {
     const [openAddWindow, setOpenAddWindow] = useState(false);
-    const [openIconWindow, setOpenIconWindow] = useState(true);
+    const [openIconWindow, setOpenIconWindow] = useState(false);
 
     return (
         <AppContext.Provider

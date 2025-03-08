@@ -20,9 +20,6 @@ export default function home() {
       )}
 
       <IconWindow />
-      {openIconWindow && (
-        <div className='w-full h-screen z-50 bg-neutral-700 fixed top-0 opacity-25' />
-      )}
 
       <div className='flex flex-col items-center w-[80em] gap-10 m-5 p-10 rounded-2xl'>
         <Header />

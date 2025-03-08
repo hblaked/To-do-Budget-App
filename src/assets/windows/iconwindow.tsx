@@ -1,6 +1,6 @@
 'use client';
 import { useAppContext } from '../appcontext';
-import { bank, atm, wallet, money, card, paid, sell, receipt, receiptlong, store, cart, trend, trendup, trenddown, barchart, chart, work, business, calendar } from '../iconlibrary';
+import { bank, atm, wallet, money, card, paid, sell, receipt, receiptlong, store, cart, trend, trendup, trenddown, barchart, chart, work, business, calendar, android, apartment, bakery, baseball, basketball, bed, bolt, burger, call, car, cards, casino, child, coffee, controller, crib, dentist, electricbolt, face, fastfood, fitness, football, gamepad, golf, grocery, group, groups, happy, home, hotel, icecream, joystick, library, liquor, medinformation, medservice, movie, network, nightlife, note, pawn, pediatrics, person, pets, petsupplies, phonering, pill, pizza, plane, pokerchip, pot, prescriptions, ramen, resturant, school, shopping, smartphone, soccer, solar, stethoscope, stroller, tenis, theater, transportation, tv, vaccines, volleyball, whistle, wifi, wind } from '../iconlibrary';
 
 export default function addwindow() {
     const {
@@ -24,6 +24,10 @@ export default function addwindow() {
 }
 
 function Header() {
+    const {
+        openIconWindowObject: { setOpenIconWindow },
+    } = useAppContext();
+
     return (
         <div className='flex justify-between items-center'>
             <span className='flex items-center p-2 gap-3'>
@@ -31,7 +35,11 @@ function Header() {
                 <h1 className='font-bold text-2xl'>All Icons</h1>
             </span>
 
-            <span>X</span>
+            {/* <span
+                onClick={() => setOpenIconWindow(false)}
+            >
+            X
+            </span> */}
         </div>
     );
 }
@@ -65,6 +73,76 @@ function AllIcons() {
         work,
         business,
         calendar,
+        home,
+        bed,
+        apartment,
+        resturant,
+        burger,
+        fastfood,
+        coffee,
+        pizza,
+        ramen,
+        icecream,
+        bakery,
+        pot,
+        liquor,
+        grocery,
+        bolt,
+        electricbolt,
+        solar,
+        wind,
+        smartphone,
+        android,
+        phonering,
+        call,
+        network,
+        wifi,
+        movie,
+        theater,
+        tv,
+        note,
+        nightlife,
+        shopping,
+        casino,
+        cards,
+        pokerchip,
+        pawn,
+        golf,
+        football,
+        baseball,
+        soccer,
+        basketball,
+        tenis,
+        volleyball,
+        whistle,
+        controller,
+        joystick,
+        gamepad,
+        person,
+        face,
+        happy,
+        fitness,
+        group,
+        groups,
+        child,
+        stroller,
+        crib,
+        pets,
+        petsupplies,
+        stethoscope,
+        pill,
+        pediatrics,
+        vaccines,
+        medservice,
+        medinformation,
+        dentist,
+        prescriptions,
+        car,
+        plane,
+        transportation,
+        hotel,
+        school,
+        library
     ]
 
     return (
